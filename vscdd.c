@@ -112,6 +112,13 @@ ssize_t vscdd_write(struct file *filp, const char __user *buf, size_t count, lof
   out:
 	return retval;
 }
+/*
+ * Функция llseek
+ */
+int vscdd_llseek(struct file *filp, loff_t offset, int whence)
+{
+	return 0;
+}
 
 /*
  * Функция драйвера для работы с устройством
